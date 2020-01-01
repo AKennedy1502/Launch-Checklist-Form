@@ -24,6 +24,32 @@
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
                     <label>Cargo Mass (kg) <input type="text" name="cargoMass"/></label>
                 </div>
+              
+
+                <script>
+                    window.addEventListener("load", function() {
+                       let form = document.querySelector("form");
+                       form.addEventListener("submit", function(event) {
+                          let pilotnameInput = document.querySelector("input[name=pilotName]");
+                          let copilotnameInput = document.querySelector("input[name=copilotName]");
+                          let fuelLevelInput = document.querySelector("input[name=fuelLevel]");
+                          let cargoMassInput = document.querySelector("input[name=cargoMass]");
+                          if (pilotnameInput.value === "" || copilotnameInput.value === "" || fuelLevelInput.value === "" || cargoMassInput.value === "") {
+                             alert("All fields are required!");
+                             // stop the form submission
+                             event.preventDefault();
+                          }
+                          if(isNaN(fuelLevelInput) === true){
+                              alert("yea");
+                              console.log(fuelLevelInput)
+                          } else {
+                              alert("Please submit a number for Fuel Level.")
+                              console.log(fuelLevelInput)
+                          }
+                       });
+                    });
+                 </script>
+            
                 <button id="formSubmit">Submit</button>
             </form>
         </div>
