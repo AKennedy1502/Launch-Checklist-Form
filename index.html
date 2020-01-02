@@ -49,8 +49,29 @@
                             let launchStatusUpdate = document.getElementById("launchStatus");
                             launchStatusUpdate.innerHTML ="Shuttle not ready for launch";
                             let fuelStatusUpdate = document.getElementById("fuelStatus");
-                            fuelStatusUpdate.innerHTML ="Fuel level too low for launch";                                          
-                        }  
+                            fuelStatusUpdate.innerHTML ="Fuel level too low for launch";
+                            let pilotStatus = document.getElementById("pilotStatus");
+                            pilotStatus.innerHTML =`Pilot ${pilotnameInput.value} is ready for launch`;
+                            let copilotStatus = document.getElementById("copilotStatus");
+                            copilotStatus.innerHTML =`Co-Pilot ${copilotnameInput.value} is ready for launch`;
+                         
+                        }else if (cargoMassInput.value >10000){   
+                            faultyItems.style.visibility = "visible"
+                            launchStatus.style.color = "red" 
+                            let launchStatusUpdate = document.getElementById("launchStatus");
+                            launchStatusUpdate.innerHTML ="Shuttle not ready for launch";
+                            let cargoStatus = document.getElementById("cargoStatus");
+                            cargoStatus.innerHTML ="Cargo mass is too high for launch";
+                            let pilotStatus = document.getElementById("pilotStatus");
+                            pilotStatus.innerHTML =`Pilot ${pilotnameInput.value} is ready for launch`;
+                            let copilotStatus = document.getElementById("copilotStatus");
+                            copilotStatus.innerHTML =`Co-Pilot ${copilotnameInput.value} is ready for launch`;
+                        }else {
+                            launchStatus.style.color = "green" 
+                            let launchStatusUpdate = document.getElementById("launchStatus");
+                            launchStatusUpdate.innerHTML ="Shuttle is ready for launch";                           
+                        }
+
                        });
                     });
                  </script>
@@ -61,9 +82,10 @@
         <div id="launchStatusCheck">
             <h2 id="launchStatus">Awaiting Information Before Launch</h2>
             <div  id="faultyItems" 
+            
                  <ol>
-                    <li id="pilotStatus">Pilot ${pilotnameInput} is ready for launch</li>
-                    <li id="copilotStatus">Co-Pilot ${copilotname} is ready for launch</li>
+                    <li id="pilotStatus">Pilot is ready for launch</li>
+                    <li id="copilotStatus">Co-Pilot is ready for launch</li>
                     <li id="fuelStatus">Fuel level high enough for launch</li>
                     <li id="cargoStatus">Cargo mass low enough for launch</li>
                 </ol>
