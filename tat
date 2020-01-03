@@ -1,0 +1,43 @@
+[33mcommit d2b0cadb3a743ea0f1235486298eec6f1ce32ee2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jim Flores <jflores@launchcode.org>
+Date:   Fri Oct 11 10:03:42 2019 -0500
+
+    Update index.html
+    
+    Fixed unit inconsistencies (lbs vs. kg, L vs. gal) between book text and index.html.
+
+[33mcommit 4cfc27e6b3cb8009a773ec7e14d4c18dcd53cafc[m
+Author: Sally Steuterman <sally.steuterman@gmail.com>
+Date:   Tue Sep 17 16:12:34 2019 -0500
+
+    Update styles.css
+
+[33mcommit 9aea3eec19eda2efe525183034417d66791e72be[m
+Author: Sally Steuterman <sally.steuterman@gmail.com>
+Date:   Mon Sep 16 14:58:25 2019 -0500
+
+    Update styles.css
+
+[33mcommit f9e760e0093b5b3d697f4d0c798c1a5a6cb423c9[m
+Author: Sally Steuterman <sally.steuterman@gmail.com>
+Date:   Mon Sep 16 14:57:09 2019 -0500
+
+    Update index.html
+
+[33mcommit 5914f8429413f8ec3064df4f1439aead86c7a057[m
+Author: Sally Steuterman <sally.steuterman@gmail.com>
+Date:   Mon Sep 16 14:05:49 2019 -0500
+
+    Update template literal
+
+[33mcommit c70bb5efaebf66eb99fe3029b70566a4f5177e91[m
+Author: Sally Steuterman <sally.steuterman@gmail.com>
+Date:   Mon Sep 16 14:05:23 2019 -0500
+
+    Update script.js
+
+[33mcommit 828735ebbc4124c8d5b3e387be22f6b476de5bd5[m
+Author: Sally Steuterman <sally.steuterman@gmail.com>
+Date:   Tue Sep 10 13:34:39 2019 -0500
+
+    Adding starter code
